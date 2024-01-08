@@ -1,9 +1,9 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
-const hiddenDatabaseUrl = process.env.databaseUrl
+//const hiddenDatabaseUrl = process.env.databaseUrl
 const appSettings = {
-    databaseURL: hiddenDatabaseUrl
+    databaseURL: "https://realtime-database-42c5a-default-rtdb.firebaseio.com/"
 }
 
 const app = initializeApp(appSettings)
