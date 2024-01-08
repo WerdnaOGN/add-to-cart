@@ -1,8 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
-
-//const hiddenDatabaseUrl = process.env.databaseUrl
 const appSettings = {
     databaseURL: "https://realtime-database-42c5a-default-rtdb.firebaseio.com/"
 }
@@ -14,16 +12,6 @@ const shoppingListInDB = ref(database, "shoppingList")
 const inputFieldEl = document.getElementById("input-field")
 const addButtonEl = document.getElementById("add-button")
 const shoppingListEl = document.getElementById("shopping-list")
-
-exports.handler = async function (event, context) {
-  const value = process.env.databaseUrl;
-  console.log(value)
-    
-  return {
-    statusCode: 200,
-    body: JSON.stringify({ message: `Value of MY_IMPORTANT_VARIABLE is ${value}.` }),
-  };  
-};
 
 addButtonEl.addEventListener("click", function() {
     let inputValue = inputFieldEl.value
