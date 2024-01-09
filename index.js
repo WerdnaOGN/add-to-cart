@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import { getDatabase, ref, push, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
-const myVariable = process.env.REACT_APP_SECRETDBURL;
-console.log(myVariable)
+//const myVariable = process.env.REACT_APP_SECRETDBURL;
+//console.log(myVariable)
 
 const appSettings = {
     databaseURL: "https://realtime-database-42c5a-default-rtdb.firebaseio.com/"
